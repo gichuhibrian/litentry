@@ -74,7 +74,7 @@ function Login() {
                 title: 'Success',
             }).then(() => {
                 localStorage.setItem('litauth', response.access_token);
-                navigate('/')
+                navigate('/dashboard')
             })
         }).catch((error) => {
             Swal.fire({
