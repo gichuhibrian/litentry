@@ -85,12 +85,6 @@ function Login() {
         })
     }
 
-    useState(() => {
-        const token = localStorage.getItem("litauth");
-        if (token) {
-            navigate('/dashboard')
-        }
-    })
     return (
         <div>
             <Box>
